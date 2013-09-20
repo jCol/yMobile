@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Yourtraileronline.com - Mobile</title>
+<!--START: import assets and such-->
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.3.2.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mobile-theme-yto.min.css" />
+<link rel="stylesheet" type="text/css" href="css/loading.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/liquid-slider.css" />
+
+<!--JS-->
+<script src="packages/jquery-1.10.2.min.js"></script>
+<script src="js/load.js"></script>
+<script src="packages/jquery.mobile.custom.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> <!--THIS ONE IS EXTERNAL-->
+<script src="packages/popup/popup.js"></script>
+<script src="js/geolocation.function.js"></script>
+<script src="js/price.functions.js"></script>
+<script src="js/mobile.ui.js"></script>
+<script src="packages/liquidSlide/jquery.easing.1.3.js"></script>
+<script src="packages/liquidSlide/jquery.touchSwipe.min.js"></script>
+<script src="packages/liquidSlide/jquery.liquid-slider-custom.min.js"></script>
+<!--END: import assets-->
+</head>
+
+<body>
+<div id="circularG">
+<div id="circularG_1" class="circularG">
+</div>
+<div id="circularG_2" class="circularG">
+</div>
+<div id="circularG_3" class="circularG">
+</div>
+<div id="circularG_4" class="circularG">
+</div>
+<div id="circularG_5" class="circularG">
+</div>
+<div id="circularG_6" class="circularG">
+</div>
+<div id="circularG_7" class="circularG">
+</div>
+<div id="circularG_8" class="circularG">
+</div>
+</div>
+<!--START: home page-->
+<div data-role="page" class="page-wrapper flex pages" id="home" data-theme="a">
+
+<div class="block-top-strip flex"></div>
+<div class="block-top flex">Yourtraileronline.com</div>
+<div class="block-top-second flex">Concession Trailers &amp; More</div>
+<div class="geolocation-notification">Acquiring Location...</div>
+<a data-role="button" data-icon="grid" id="expand-nav" data-iconpos="right">Navigation</a>
+<div class="navigation-group">
+<div data-role="controlgroup">
+<a href="#design-online-start" data-role="button" data-icon="edit" data-iconpos="right" data-transition="flow">Design Your Concession Online</a>
+<a href="#products-pre-designed" data-role="button" data-icon="star" data-iconpos="right" data-transition="flow">Pre-designed Concessions</a>
+<a href="#products-trailers" data-role="button" data-icon="star" data-iconpos="right" data-transition="flow">Regular Trailers</a>
+<a href="#how" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="flow">Learn how to use our mobile site</a>
+<a href="#financing" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="flow">Financing</a>
+<a href="#testimonials" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="flow">Testimonials</a>
+<a href="#settings" data-role="button" data-icon="gear" data-iconpos="right" data-transition="flow">Site Settings</a>
+</div>
+</div>
+<div class="liquid-slider"  id="main-slider">
+	<div>
+    	<img src="img/slides/slides1.jpg" style="max-width:800px;" width="100%" border="0"/>
+    </div>
+    <div>
+    	<img src="img/slides/slides2.jpg" style="max-width:800px;" width="100%" border="0"/>
+    </div>
+    <div>
+    	<img src="img/slides/slides3.jpg" style="max-width:800px;" width="100%" border="0"/>
+    </div>
+</div>
+<a href="tel:18004472188" data-role="button" data-icon="info" data-inline="true" data-mini="true">Click To Call | Mon-Fri 9AM-6PM | Sat 10AM-3PM</a>
+<a data-role="button" data-icon="alert" data-mini="true" data-inline="true" href="mailto:marketing@yourtraileronline.com?Subject=Bug%20Report%20-%20Mobile%20Site">Report a Bug</a>
+</div>
+<!--END: home page-->
+<!--START: "settings" page-->
+<div data-role="page" class="page-wrapper flex pages" id="settings" data-theme="a">
+<label for="flip-theme">Theme Mode:</label>
+<select name="flip-theme" id="flip-theme" data-role="slider">
+	<option value="a">Normal</option>
+	<option value="b">Dark</option>
+</select><br/>
+<input type="button" id="save-changes" value="Save Changes" data-mini="true" data-inline="true" />
+</div>
+<!--END: "settings" page-->
+<!--START: "how it works" page-->
+<div data-role="page" class="page-wrapper flex pages" id="how" data-theme="a">
+To be completed.
+</div>
+<!--END: "how it works" page-->
+<!--START: "financing" page-->
+<div data-role="page" class="page-wrapper flex pages" id="financing" data-theme="a">
+<div class="block-top-strip flex"></div>
+<div class="block-top flex">Financing</div>
+<div class="block-top-second flex">Starting up your future</div>
+<a data-role="button" data-icon="back" data-theme="a" data-mini="true" href="#home" data-inline="true" data-transition="flow">Back</a>
+</div>
+<!--END: "financing" page-->
+<!--START: "testimonials" page-->
+<div data-role="page" class="page-wrapper flex pages" id="testimonials" data-theme="a">
+<div class="block-top-strip flex"></div>
+<div class="block-top flex">Testimonials</div>
+<div class="block-top-second flex">Discover why we rock</div>
+<a data-role="button" data-icon="back" data-theme="a" data-mini="true" href="#home" data-inline="true" data-transition="flow">Back</a>
+
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">Custom Designed 8.5ft. x 18ftx Tandem Axle Concession Trailer</div></div>
+    <div class="ui-block-a"><a href="http://dreamsonwingsco.com/concession-food-services.html" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right" class="ui-bar ui-bar-a">Dreams on Wings, CO.</a></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"The trailer met our expectations and prayers and we find it not only a very nice looking trailer but also constructed extremely well. The craftsmanship shows with every detail. Gray assisted us with the initial inspection. After going over our order line item by line item, we found the D rings in the floor were missing and also the cabinet doors under the sink need adjustment. Gray quickly asked his men to take care of both issues without hesitation or complaint.<br/>
+Thank you for working with us. We are so thankful that we purchased the new concession trailer through Your Trailer Online."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">8.5ft. X 28ft. 5200lbs. Tandem Axle Trailer</div></div>
+    <div class="ui-block-a"><div data-role="button" data-theme="a" class="ui-bar ui-bar-a">Larry from Indiana</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"My trailer is great and your reps are real, honest people."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">8.5ft. X 24ft. Long Car Hauler</div></div>
+    <div class="ui-block-a"><div data-role="button" data-theme="a" class="ui-bar ui-bar-a">C.S. from Wyoming</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"I am tickled 'pink' with the trailer! It is the perfect garage for my toy."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">Custom Designed 8.5ft. X 18ft. Tandem Axle Concession Trailer</div></div>
+    <div class="ui-block-a"><a href="https://www.facebook.com/pages/Olive-Tree-Kitchens-and-Catering-LLC/172041156276533" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right" class="ui-bar ui-bar-a">Olive Tree Kitchens and Catering LLC. from Farmington, MO</a></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"I would like to take a moment to express my thanks to your company for the quality of not only the product that you place into the workforce but also the quality of the customer service that you provide. I have been in the market for a catering trailer for some time and looked at some fine trailers. It was only when I looked at one of yours that I became impressed enough to buy. The quality of your product in my opinion is top notch. Your company clearly takes great pride in putting excellent grade products out to the public at a reasonable price. The customer care that I received is superb, the same level that I extend to my own customers. I wish your business the very best of success in the future and look forward to purchasing my next trailer from you."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">Custom Designed Pewter/black 8.5ft. X 18ft. Tandem Axle Concession Trailer</div></div>
+    <div class="ui-block-a"><a href="https://www.facebook.com/pages/Black-Stallion-BBQ/429320993773146" data-role="button"  data-icon="arrow-r" data-iconpos="right" class="ui-bar ui-bar-a">Jonathan @ Black Stallion BBQ</a></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"Phenomenal clean, product and we couldn’t be happier with it. People are always curious to see inside. Tight and sturdy construction; pulls around great and holds the snow."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">Custom Designed 8.5ft. X 16ft. Tandem Axle Concession Trailer</div></div>
+    <div class="ui-block-a"><div data-role="button" class="ui-bar ui-bar-a">Bo C. @ TownCrier Promotions from Breckenridge, CO</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"I like the trailer alot. Everyone loves my trailer and people stop all the time just to say how nice it is."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">Custom Designed 8.5ft. X 16ft. Tandem Axle Concession Trailer</div></div>
+    <div class="ui-block-a"><div data-role="button" data-theme="a" class="ui-bar ui-bar-a">David from Mississippi</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"I'm completely satisfied with the trailer and the colors I chose came out beautiful. Many people have commented on much they like it!"</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+<!--start-contentgroup-->
+<div data-role="controlgroup">
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">6ft. X 12ft. Tandem Axle Trailer</div></div>
+    <div class="ui-block-a"><div data-role="button" data-theme="a" class="ui-bar ui-bar-a">James A. from Georgia</div></div>
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b">
+"Looking forward to doing business with you again."</div></div></div></div><!-- /grid --><br/>
+<!--end-contentgroup-->
+
+
+
+</div>
+
+</div>
+<!--END: "testimonials" page-->
+<!--START: "predesigned" page-->
+<div data-role="page" class="page-wrapper flex pages" id="products-pre-designed" data-theme="a">
+Pre-designed concessions
+</div>
+<!--END: "predesigned" page-->
+<!--START: "regular" page-->
+<div data-role="page" class="page-wrapper flex pages" id="products-trailers" data-theme="a">
+Regular trailers
+</div>
+<!--END: "regular" page-->
+
+<!--START: "design" page-->
+<div data-role="page" class="page-wrapper flex pages" id="design-online-start" data-theme="a">
+<!--
+
+	<div data-role="panel" data-display="reveal" data-position="left" id="concession-panel">
+    <div class="picture-preview"></div>
+	</div>END: panel -->
+    
+    <div class="block-top-strip flex"></div>
+<div class="block-top flex">Custom Concessions</div>
+<div class="block-top-second flex">Let's do this.</div>
+<div data-role="collapsible-set">
+    <div data-role="collapsible" data-collapsed="false">
+        <h3>Get started</h3>
+        <p>Collapsible content</p>
+    </div>
+    <div data-role="collapsible" class="sections-expand">
+        <h2>S2</h2>
+        <p>Collapsible content</p>
+    </div>
+    <div data-role="collapsible" class="sections-expand">
+        <h3>S3</h3>
+        <p>Collapsible content</p>
+    </div>
+</div>
+</div>
+<!--EMD: "design" page-->
+
+<!--run these scripts at the end of the load-->
+<script>
+$("#main-slider").liquidSlider();
+</script>
+</body>
+</html>

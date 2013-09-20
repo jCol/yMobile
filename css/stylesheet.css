@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'robotothin';
+    src: url('fonts/roboto-thin-webfont.eot');
+    src: url('fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-thin-webfont.woff') format('woff'),
+         url('fonts/roboto-thin-webfont.ttf') format('truetype'),
+         url('fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow-x: hidden; 
+	font-family: 'robotothin', Verdana, Geneva, sans-serif;
+}
+.page-wrapper {
+	height:auto;
+	margin:0;
+	text-align:center;
+}
+.block-top-strip {
+	height:5px;
+	background-color:#09F;
+	margin:0 auto;
+}
+
+.block-top {
+	height:46px;
+	margin:0;
+	background:#ffa600
+	url(../img/highlight_bg_trans20_x_axis.png) center repeat-x;
+	color:#FFF;
+	font-family: 'robotothin', Verdana, Geneva, sans-serif;
+	text-align:center;
+	font-size:36px;
+	overflow:hidden;
+}
+
+.block-top-second {
+	height:29px;
+	margin:0;
+	background-color:#CCC;
+	color:#000;
+	font-family: 'robotothin', Verdana, Geneva, sans-serif;
+	font-size:24px;
+	overflow:hidden;
+}
+
+.flex {
+	width:100%;
+}
+
+.navigation-group {
+	display:none;	
+}
+
+.picture-preview {
+}
+
+.geolocation-notification {
+	font-size:15px;
+	font-family: 'robotothin', Verdana, Geneva, sans-serif;
+}
