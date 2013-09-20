@@ -51,9 +51,9 @@ function zip_from_latlng(latitude,longitude,callback)
 }
 
 function gotZip(s) {
-	if(s=true) {
+	if(s) {
 		$(".geolocation-notification").html("Your location is cached at zipcode " + zip + '. If this is wrong, please see "site settings".');
-	} if(zip !== null && zip!==undefined) {
+	} if(zip!==null && zip!==undefined) {
 		$(".geolocation-notification").html("Location detected at zipcode " + zip + '.');
 //	} else if(s=true) {
 //		$(".geolocation-notification").html("Your location is cached at zipcode " + zip + '. If this is wrong, please see "site settings".');

@@ -32,6 +32,8 @@
 </head>
 
 <body>
+
+<!--START: Circle loader by CSS-->
 <div id="circularG">
 <div id="circularG_1" class="circularG">
 </div>
@@ -50,8 +52,10 @@
 <div id="circularG_8" class="circularG">
 </div>
 </div>
+<!--END: Circle loader-->
+
 <!--START: home page-->
-<div data-role="page" class="page-wrapper flex pages" id="home" data-theme="a">
+<div data-role="page" class="page-wrapper flex" id="home" data-theme="a" data-dom-cache="false">
 
 <div class="block-top-strip flex"></div>
 <div class="block-top flex">Yourtraileronline.com</div>
@@ -85,8 +89,8 @@
 </div>
 <!--END: home page-->
 <!--START: "settings" page-->
-<div data-role="page" class="page-wrapper flex pages" id="settings" data-theme="a">
-<label for="flip-theme">Theme Mode:</label>
+<div data-role="page" class="page-wrapper flex" id="settings" data-theme="a">
+<label for="flip-theme">Theme Mode (BETA):</label>
 <select name="flip-theme" id="flip-theme" data-role="slider">
 	<option value="a">Normal</option>
 	<option value="b">Dark</option>
@@ -179,11 +183,7 @@ Thank you for working with us. We are so thankful that we purchased the new conc
     <div class="ui-block-a"><div class="ui-bar ui-bar-b">
 "Looking forward to doing business with you again."</div></div></div></div><!-- /grid --><br/>
 <!--end-contentgroup-->
-
-
-
 </div>
-
 </div>
 <!--END: "testimonials" page-->
 <!--START: "predesigned" page-->
@@ -203,15 +203,32 @@ Regular trailers
 
 	<div data-role="panel" data-display="reveal" data-position="left" id="concession-panel">
     <div class="picture-preview"></div>
-	</div>END: panel -->
+</div>END: panel -->
     
-    <div class="block-top-strip flex"></div>
+<div class="block-top-strip flex"></div>
 <div class="block-top flex">Custom Concessions</div>
 <div class="block-top-second flex">Let's do this.</div>
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-b price-display"></div> <div class="change-display"></div></div>
+</div>
 <div data-role="collapsible-set">
     <div data-role="collapsible" data-collapsed="false">
-        <h3>Get started</h3>
-        <p>Collapsible content</p>
+        <h3>Base Options</h3>
+        <label for="flip-width">Width:</label>
+		<select name="flip-width" id="flip-width" data-role="slider" class="base-update base-update-val">
+			<option value="0">7'</option>
+			<option value="200">8.5'</option>
+		</select><br/>
+        <label for="slider-length">Length:</label>
+        <div class="base-update">
+        <input type="range" name="slider-length" id="slider-length" class="base-update-length" value="14" min="14" max="32" step="2" data-highlight="true">
+        </div>
+        <label for="flip-nose">Nose Type:</label>
+        <select name="flip-nose" id="flip-nose" data-role="slider" class="base-update base-update-val">
+			<option value="0">Blunt</option>
+			<option value="125">V</option>
+		</select><br/>
+    
     </div>
     <div data-role="collapsible" class="sections-expand">
         <h2>S2</h2>
